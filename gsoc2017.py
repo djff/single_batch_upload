@@ -28,6 +28,4 @@ def upload(GLAM, ID):
     return '<html><title>This is a test</title> <body> <h1>operation successful </h1></body> </html>'
 
 if __name__ == '__main__':
-    app.run(
-        port=4000
-    )
+    app.run()
