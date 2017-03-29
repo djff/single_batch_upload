@@ -17,7 +17,6 @@ better_naming = [
 
 @app.route('/')
 def index():
-    print('it works fine')
     return '<html><title>This is a test</title> <body> test this out </body> < /html>'
 
 @app.route('/upload/<string:GLAM>/<int:ID>/',)
@@ -28,7 +27,6 @@ def upload(GLAM, ID):
     :param ID: Image unique identifier
     :return:
     """
-    print(GLAM)
     try:
 
         glam_instance = glam_mapping[GLAM]
