@@ -252,3 +252,4 @@ def main(glam, article_id):
                   + '&count=100&startIndex=' + str(i) + '01'
         print(sendurl)
         instance.load_from_url(sendurl, categories, nocat, uploading=True)
+    return True
