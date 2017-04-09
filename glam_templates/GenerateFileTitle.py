@@ -26,18 +26,18 @@ class GenerateFileTitle:
         # title += seperator + self.collection
 
         if self.filename:
-            title += seperator + self.filename
+            title = seperator.join([self.filename])
 
         elif self.description:
-            title += seperator + self.description
+            title = seperator.join([self.description])
 
         if self.glam_name:
-            title += seperator + self.glam_name
+            title = seperator.join([title, self.glam_name])
 
         if self.file_id:
-            title +=  seperator + self.file_id
+            title = seperator.join([title, self.file_id])
 
-        self.file_title = title + self.extension
+        self.file_title = '.'.join([title, self.extension])
 
     def get_filename(self):
         """
