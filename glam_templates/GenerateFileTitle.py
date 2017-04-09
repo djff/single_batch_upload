@@ -26,10 +26,10 @@ class GenerateFileTitle:
         # title += seperator + self.collection
 
         if self.filename:
-            title = seperator.join([self.filename])
+            title = self.filename
 
         elif self.description:
-            title = seperator.join([self.description])
+            title = self.description
 
         if self.glam_name:
             title = seperator.join([title, self.glam_name])
